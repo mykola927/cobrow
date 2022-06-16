@@ -1,0 +1,36 @@
+//- file name: project.jade
+//- author: Supernova
+//- date: 16/6/2022
+//- description: this is total layout file
+extends project-layout
+
+block content
+  #firepad
+  #menu-container
+    .container
+    #menu-header.row 
+      .col-md-12
+        #project-title.menu-heading
+    #menu-edition.row
+      .col-md-12
+        .menu-heading Edition mode
+        #edition-options
+          .row.option-check
+            input(type="radio", name="selected_edition_mode", value="contribution")
+            span  Contributions
+          .row.option-check
+            input(type="radio", name="selected_edition_mode", value="production")
+            span  Product generation
+    #menu-developers.row
+      .col-md-12
+        .menu-heading Developers
+        #developers-list
+    #menu-file.row
+    .col-md-12
+      .menu-heading Browser
+      #generation-options
+        .row.generation-item
+          input#browse-path-name.generation-file-name(type="text", name="filename" placeholder="Please enter url")
+        .row.generation-item
+          a#browse-button.btn.btn-primary.disabled.generation-button(name="browserbtn") Play
+

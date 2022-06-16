@@ -1,0 +1,65 @@
+
+doctype html
+html
+  head
+    title= title
+    //-Firebase
+    script(src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js")
+    
+    //- Jquery
+    script(src="/javascripts/vendor/jquery-3.2.0.min.js")
+
+    //-Bootstrap
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap-theme.min.css')
+    script(src="/javascripts/vendor/bootstrap.min.js")
+
+    //-CodeMirror
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.17.0/codemirror.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.17.0/mode/javascript/javascript.js")
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.17.0/codemirror.css')
+    link(rel='stylesheet', href='/stylesheets/dracula.css')
+    
+    //-CodeMirror plugins
+    script(src="/javascripts/vendor/codemirror/dialog.js")
+    script(src="/javascripts/vendor/codemirror/show-hint.js")
+    script(src="/javascripts/vendor/codemirror/search-cursor.js")
+    script(src="/javascripts/vendor/codemirror/search.js")
+    script(src="/javascripts/vendor/codemirror/close-brackets.js")
+    script(src="/javascripts/vendor/codemirror/comment-code.js")
+    script(src="/javascripts/vendor/codemirror/javascript-hints.js")
+    script(src="/javascripts/vendor/codemirror/lint.js")
+    script(src="/javascripts/vendor/codemirror/javascript-lint.js")
+    script(src="/javascripts/vendor/codemirror/match-brackets.js")
+    script(src="/javascripts/vendor/codemirror/anyword-hint.js")
+    link(rel='stylesheet', href='/stylesheets/codemirror/dialog.css')
+    link(rel='stylesheet', href='/stylesheets/codemirror/lint.css')
+    link(rel='stylesheet', href='/stylesheets/codemirror/show-hint.css')
+
+    //-Firepad
+    link(rel='stylesheet', href='/stylesheets/firepad.css')
+    script(src="/javascripts/vendor/firepad.js")
+    
+    //-Context traits
+    script(src="/javascripts/vendor/underscore.js")
+    script(src="/javascripts/vendor/traits.js")
+    script(src="/javascripts/vendor/context-traits.js")
+    
+
+    //-Main script
+    script(type='text/javascript').
+      var loggedUser =!{JSON.stringify(loggedUser)}
+
+    script(src="/javascripts/menu-developers.js")
+    script(src="/javascripts/menu-edition.js")
+    script(src="/javascripts/menu-files.js")
+    script(src="/javascripts/menu-versions.js")
+    script(src="/javascripts/project-contexts.js")
+    script(src="/javascripts/firepad-main.js")
+    
+
+    link(rel='stylesheet', href='/stylesheets/style.css')
+
+
+  body(onload="init()")
+    block content

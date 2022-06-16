@@ -1,0 +1,19 @@
+
+doctype html
+html
+  head
+    title= 'Co-Browsing'
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap-theme.min.css')
+    link(rel='stylesheet', href='/stylesheets/style-login.css')
+    script(src="/javascripts/vendor/jquery-3.2.0.min.js")
+    script(src="/javascripts/vendor/bootstrap.min.js")
+    
+    script(type='text/javascript').
+      var dataObtained =!{JSON.stringify(data)}
+
+    script(src="/javascripts/indexMain.js")
+    
+
+  body
+    block content

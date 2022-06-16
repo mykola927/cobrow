@@ -1,0 +1,156 @@
+html {
+   height: 100%; 
+}
+body {
+   margin: 0; height: 100%; overflow: auto;
+}
+    /* Height / width / positioning can be customized for your use case.
+       For demo purposes, we make the user list 175px and firepad fill the rest of the page. */
+    /*
+    #userlist {
+      position: absolute; left: 0; top: 0; bottom: 0; height: auto;
+      width: 175px;
+    }
+    */
+
+#firepad {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: auto;
+  width: 72%;
+  padding: 1em 1em;
+  border: 0.2em solid rgba(192,192,192,0.6);
+}
+
+#menu-container {
+  position: absolute;
+  left: 0; 
+  top: 0; 
+  height: auto;
+  width: 28%;
+  padding: 0 1em 0 1em;
+  border: 0.2em solid rgba(192,192,192,0.6);
+}
+
+#menu-header {
+  border: 0.2em solid rgba(192,192,192,0.6);
+  height: 5%;
+}
+
+#menu-edition {
+  border: 0.2em solid rgba(192,192,192,0.6);
+  height: 15%;
+}
+
+#menu-developers {
+  border: 0.2em solid rgba(192,192,192,0.6);
+  height: 60%;
+}
+
+.menu-developers-item {
+  padding: 0.4em 0;
+  border-bottom: 0.2em solid rgba(192,192,192,0.6);
+}
+
+
+#menu-file {
+  border: 0.2em solid rgba(192,192,192,0.6);
+  height: 20%;
+}
+
+.menu-heading {
+  padding: 0.2em;
+  font-size: 1.7em;
+  color: #329875;
+}
+
+.offline-icon{
+  width: 0.7em;
+	height: 0.7em;
+	background: gray;
+	-moz-border-radius: 2em;
+	-webkit-border-radius: 2em;
+	border-radius: 2em;
+}
+
+.online-icon{
+  width: 0.7em;
+	height: 0.7em;
+  text-align: center;
+	background: green;
+	-moz-border-radius: 2em;
+	-webkit-border-radius: 2em;
+	border-radius: 2em;
+}
+
+input[type="checkbox"]{
+  width: 1.5em; 
+  height: 1.5em; 
+}
+
+.option-check{
+  margin: 0.5em;
+}
+
+.generation-item{
+  margin: 0.5em;
+}
+
+.generation-button{
+  margin: 0.5em 0; 
+  width:80%
+}
+
+.generation-file-name{
+  width:80%
+}
+
+div.input{
+  margin: 1em
+}
+
+div.actions{
+  margin: 1em;
+}
+
+a.powered-by-firepad {
+  display: none;
+}
+
+.new-version-option{
+  margin: 0.5em;
+}
+
+.new-version-button{
+  margin: 0.5em 0; 
+  width:80%
+}
+
+.version-name{
+  width:80%
+}
+
+.menu-version-item{
+  padding: 0.4em 0;
+  border-bottom: 0.2em solid rgba(192,192,192,0.6);
+}
+
+.restore-button, .update-button{
+  margin: 0.5em;
+  width: 90%
+}
+
+#project-title{
+  color: #329875;
+  font-size: 2.5em;
+}
+
+.btn{
+  font-weight: bold !important;
+}
+
+.CodeMirror-matchingbracket{
+  color: #A8A8A8 !important;
+}

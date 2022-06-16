@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  .container
+    .row
+      span#collab Collab
+      span#IDE IDE
+    .row
+      span#intro-text Welcome to Co-Browsing, log into your project by providing your credentials and the name of the project.
+    .row
+        form(action="login" name="project-login", method="post")
+            div.container
+                div.input.row
+                    .col-md-2
+                        span#prompt Username:
+                    .col-md-2
+                        input(type="text", name="username")
+                div.input.row
+                    .col-md-2
+                        span#prompt Password:
+                    .col-md-2
+                        input(type="password",name="password")
+                div.input.row
+                    .col-md-2
+                        span#prompt Project:
+                    .col-md-2
+                        input(type="text",name="project")
+                div.actions.row
+                    .col-md-4
+                        input#butlogin(type="submit", value="Login") 

@@ -1,0 +1,45 @@
+html, body{
+    margin: auto;
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+div.input{
+  margin: 1em
+}
+
+#collab, #IDE{
+    font-size: 7em;
+}
+
+#IDE{
+    color: #329875;
+}
+
+#intro-text{
+    font-size: 2em;
+}
+
+input, #prompt{
+    font-size: 1.5em;
+
+}
+
+#butlogin{
+    margin-top: 5%;
+    font-size: 1.5em;
+    margin-left: 7%;
+    width: 70%;
+    font-weight: bold;
+    background-color: #329875;
+    color:white
+}
