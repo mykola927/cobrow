@@ -70,7 +70,6 @@ function init() {
 
     //Hide the edition menu for now
     $('#menu-edition').hide();
-
     //experimental();
     firepad.on('ready', function () {
         $('#generate-button').click(function (e) {
@@ -101,7 +100,12 @@ function init() {
         $("#browse-button").removeClass("disabled");
         $("#browse-button").click(function (e) {
             e.preventDefault();
-            let inputVal = $("#browse-path-name").val();
+            $("#external-site").remove();  
+            $(".firepad").append('<div id="external-site" style="margin-top: 40px;"><h1>Reference Site</h1></div>');
+            let inputVal = $("#browse-path-name").val();        
+            let site_url = '<div id="external-site"><iframe src="' + inputVal + '" style="border: 2px solid blue; width: 100%; height: 100vh; margin-top: 40px;"></iframe></div>';
+            console.log("this is calling", site_url);
+            $("#external-site").html(site_url);
             return false;
         })
     });
